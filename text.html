@@ -1,0 +1,27 @@
+
+
+```html
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>نمایش کد تصادفی</title>
+</head>
+<body>
+<h1>کد تصادفی</h1>
+<button onclick="generateRandomCode()">تولید کد تصادفی</button>
+<p id="randomCode"></p>
+
+<script>
+function generateRandomCode() {
+const codes = [1589036, 1494667, 3757781];
+const randomIndex = Math.floor(Math.random() * codes.length);
+const randomCode = codes[randomIndex];
+document.getElementById('randomCode').innerText = randomCode;
+}
+<a href="/training/html-css/" target="_blank">
+</script>
+</body>
+</html>
+```
